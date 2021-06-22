@@ -1,0 +1,17 @@
+#boardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100vh;
+    height: 60vh;
+    margin: auto;
+}
+
+.playerMove {
+    border: 1px solid black;
+}
+
+.playerMove:hover {
+    background-color: rgb(236, 236, 226);
+    transform: scale(1.05);
+}

@@ -136,6 +136,7 @@ const board = (() => {
         boardContainer.textContent = '';
         boardContainer.addEventListener('click', playerChange);
         displayRender.resetDisplay();
+        drawCount = 0;
         updateContainer();
     }
 

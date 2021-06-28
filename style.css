@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+body {
+    font-family: 'Akaya Kanadaka', cursive;
+    background-color: #FCDAB7;
+    color: #1D2D50;
+}
+
 #boardContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -7,11 +14,45 @@
     margin: auto;
 }
 
-.playerMove {
+.playBox {
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E5F74;
+    color: #FCDAB7;
 }
 
-.playerMove:hover {
-    background-color: rgb(236, 236, 226);
+.playBox:hover {
+    background-color: #133B5C;
     transform: scale(1.05);
+}
+
+.text {
+    font-size: 10em;
+}
+
+#display {
+    text-align: center;
+    font-size: 3em;
+}
+
+#resetContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+#resetButton {
+    font-size: 3em;
+    border-radius: .3em;
+    background-color: #1E5F74;
+    color: #FCDAB7;
+    border: 1px solid transparent;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+#resetButton:hover {
+    transform: scale(1.1);
 }
